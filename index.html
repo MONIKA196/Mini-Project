@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Shopping Assistant - Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- 🔐 Intro and Login Section -->
+  <div id="introPage" class="intro-page">
+    <h1>👗 Welcome to AI Fashion Assistant</h1>
+
+    <form id="loginForm" class="hidden">
+      <input type="text" id="username" placeholder="Username" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <button type="button" onclick="handleLogin()">Login</button>
+    </form>
+  </div>
+
+  <!-- 🌟 Main App After Login -->
+  <div id="mainApp" class="hidden">
+    <header class="header">
+      <div class="logo-area">
+        <img src="https://img.icons8.com/color/96/shop.png" alt="Logo" class="logo" />
+        <span class="brand-name">AI Fashion</span>
+      </div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Categories</a>
+        <a href="#">Account</a>
+        <a href="#">Cart</a>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <section class="welcome-section">
+        <h1>Style. Shop. Smart. 👗✨</h1>
+        <p>Let <strong>Hello AI</strong> help you pick the perfect outfit using AI & your style!</p>
+      </section>
+
+      <section class="about-chatgpt">
+        <h2>About ChatGPT</h2>
+        <p>This assistant is powered by ChatGPT AI that understands your preferences like color, size, skin tone, and function style, and helps you pick the best match available in stock.</p>
+      </section>
+
+      <section class="chat-assistant">
+        <h2>Hello AI 🤖</h2>
+        <div class="chat-box" id="chat-box">
+          <div class="ai-msg">Hi! Please enter your preferences below to find your perfect dress.</div>
+        </div>
+
+        <label for="colorName"><strong>Enter Color Name:</strong></label>
+        <input type="text" id="colorName" placeholder="e.g., yellow, pink" />
+
+        <label for="sizeInput"><strong>Select Size:</strong></label>
+        <select id="sizeInput">
+          <option value="">--Select Size--</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+        </select>
+
+        <label for="priceInput"><strong>Select Price Level:</strong></label>
+        <select id="priceInput">
+          <option value="">--Select Price--</option>
+          <option value="500">₹500</option>
+          <option value="1000">₹1000</option>
+          <option value="1500">₹1500</option>
+          <option value="2000">₹2000+</option>
+        </select>
+
+        <label for="functionInput"><strong>Function Mode:</strong></label>
+        <select id="functionInput">
+          <option value="">--Select Mode--</option>
+          <option value="traditional">Traditional</option>
+          <option value="western">Western</option>
+        </select>
+
+        <label for="imageInput"><strong>Upload Your Photo:</strong></label>
+        <input type="file" id="imageInput" accept="image/*" />
+
+        <button onclick="getDressSuggestions()">Get Suggestions</button>
+        <button onclick="showAllStock()">Show Available Stock</button>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

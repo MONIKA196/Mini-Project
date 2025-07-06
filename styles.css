@@ -1,0 +1,234 @@
+/* 🌐 Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #fff1f9, #f0f0ff);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* 🔷 Header */
+header {
+  background: linear-gradient(90deg, #ff6ec4, #7873f5);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.brand-name {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* 🏠 Main Content */
+main {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.welcome-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.welcome-section h1 {
+  font-size: 2.2rem;
+  background: linear-gradient(to right, #ff6ec4, #7873f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-chatgpt {
+  background: #fce4ec;
+  padding: 1.2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* 🤖 Chat Assistant */
+.chat-assistant {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+.chat-box {
+  height: 240px;
+  overflow-y: auto;
+  border: 1px solid #e0e0e0;
+  padding: 0.8rem;
+  background-color: #fdfdfd;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.ai-msg {
+  background-color: #e1bee7;
+  color: #4a148c;
+  padding: 0.6rem;
+  border-radius: 10px;
+  margin: 0.4rem 0;
+}
+
+.user-msg {
+  background-color: #ffe0b2;
+  color: #e65100;
+  padding: 0.6rem;
+  border-radius: 10px;
+  margin: 0.4rem 0;
+  text-align: right;
+}
+
+.chat-box img {
+  width: 120px;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #444;
+}
+
+input[type="text"],
+input[type="file"],
+select {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  background-color: #ba68c8;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #9c27b0;
+}
+
+/* 🔐 Intro Page */
+.intro-page {
+  background: linear-gradient(to right, #ffdee9, #b5fffc);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 2s ease-in-out;
+  text-align: center;
+}
+
+.intro-page h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1.2rem;
+  background: linear-gradient(to right, #ff6ec4, #7873f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro-page button {
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  background-color: #8e24aa;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+.intro-page button:hover {
+  background-color: #6a1b9a;
+}
+.hidden {
+  display: none;
+}
+
+
+/* 🔑 Login Form */
+#loginForm {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+#loginForm input {
+  padding: 0.6rem;
+  width: 220px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+#loginForm button {
+  background-color: #8e24aa;
+  color: white;
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+#loginForm button:hover {
+  background-color: #6a1b9a;
+}
+
+/* 🎬 Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🧩 Utility */
+.hidden {
+  display: none;
+}
